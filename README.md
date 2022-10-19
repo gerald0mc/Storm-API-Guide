@@ -1,6 +1,8 @@
 # Storm-API-Guide
 ## Reason for this existing?
 This guide will be a starter guide on what to do when you begin using the Storm API since you will have to do some different things then if you were creating a Lua mod for Project Zomboid.
+## Adding to this knowledge?
+You can add a Pull Request at any time and as long as it is something that builds upon the knowledge already added then it will be accepted.
 ## Getting Started?
 Luckily actullay getting started isnt that hard since we have our god Mlem who spent his hard time making a example mod for the Storm API community (He is also the person who maintains the currently used versions of Storm API, so fr pray to him).
 
