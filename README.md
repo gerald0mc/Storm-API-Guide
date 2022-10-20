@@ -40,3 +40,19 @@ You can draw text to the screen relatively easily in Project Zomboid. All you ha
 - text = The string you wish to draw on the screen.
 
 //#TODO ADD WHAT ALL THE VARIABLES IN DRAWSTRING METHOD MEAN
+
+Below is a way you can draw text on the main menu screen to give it a try!
+```
+@SubscribeEvent
+	public void handleUIElementRenderEvent(OnUIElementPreRenderEvent event) {
+		if (event.element.Parent != null) {
+			KahluaTable table = event.element.Parent.table;
+			if (table instanceof KahluaTableImpl) {
+				Object internal = ((KahluaTableImpl) table).delegate.get("internal");
+				if (internal instanceof String && internal.equals("VERSIONDETAIL")) {
+					TextManager.instance.DrawString(font, x, y, text, 1.0, 1.0, 1.0, 0.7);
+				}
+			}
+		}
+	}
+```
