@@ -8,6 +8,7 @@ Luckily actullay getting started isnt that hard since we have our god Mlem who s
 
 You can find his example project [here](https://github.com/mlem/storm/tree/docs/example-mod/example-mod).
 ## Utilizing the Code?
+### Instance use:
 There are multiple things I can show you that will help you when trying to learn the difference between Lua and Java modding, but the biggest one is that the Java side of Project Zomboid uses instances to access everything being used in the game at the moment.
 
 For example you don't need to use the LuaManager.GlobalObject which is what is what allows you to do perform getSpecifiedPlayer(0) to get the player, instead you can just do ```IsoPlayer player = IsoPlayer.getInstance();```.
@@ -15,5 +16,11 @@ For example you don't need to use the LuaManager.GlobalObject which is what is w
 I would say around 90% of the time if you are looking for something that is currently running in the game, you can find it by getting the instance of the class.
 
 There are two different ways you will normally have to get an instance in the Project Zomboid code, it will either by performing InsertClass.getInstance() or InsertClass.instance. You have to check both ways because sometimes the instance is private, which makes you have to use the getter for it. But if not then you can just perform the instance call straight to the declared variable.
+### Item creation:
+Lua Scripts... :(
+
+At this point in time I am still trying to learn how to add items to the game the same way the PZ devs do it, but once I do figure that out you can bet I will be adding it to this repo.
+
+If anyone knows how PZ adds items to the game Java side then please make a pull request with some information on how to do it.
 
 //#TODO LEARN HOW TO ADD YOUR ITEMS TO THE GAME WITHOUT HAVING TO USE LUA SCRIPTS
