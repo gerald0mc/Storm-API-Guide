@@ -31,3 +31,11 @@ At this point in time I am still trying to learn how to add items to the game th
 If anyone knows how PZ adds items to the game Java side then please make a pull request with some information on how to do it.
 
 //#TODO LEARN HOW TO ADD YOUR ITEMS TO THE GAME WITHOUT HAVING TO USE LUA SCRIPTS
+### Drawing text:
+You can draw text to the screen relatively easily in Project Zomboid. All you have to do is call the ```TextManager.instance``` which allows you to perform the ```DrawString(font, x, y, text, 1.0, 1.0, 1.0, 0.7);``` method.
+- font = The font you wish to use when drawing the text, you can get the UI font by performing ```UIFont.FontSize``` where in the FontSize you can choose between Small, Medium, or Large.
+- x = Where on the x-plane you wish to start rendering your text.
+- y = Where on the y-plane you wish to start rendering your text.
+- text = The string you wish to draw on the screen.
+
+//#TODO ADD WHAT ALL THE VARIABLES IN DRAWSTRING METHOD MEAN
