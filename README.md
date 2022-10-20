@@ -1,4 +1,11 @@
 # Storm-API-Guide
+# Table of Contents
+1. [Reason for this existing?](#reason-for-this-existing)
+2. [Adding to this knowledge?](#adding-to-this-knowledge)
+3. [Getting Started?](#getting-started)
+4. [Utilizing the Code?](#utilizing-the-code)
+5. [Instance Use](#instance-use)
+6. [Item Creation](#item-creation)
 ## Reason for this existing?
 This guide will be a starter guide on what to do when you begin using the Storm API since you will have to do some different things then if you were creating a Lua mod for Project Zomboid.
 ## Adding to this knowledge?
